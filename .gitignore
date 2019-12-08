@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Ecommerce
+/Ecommerce.API/bin
+/Ecommerce.API/obj
+/Ecommerce.API/appsettings.Development.json
+/Ecommerce.Application/bin
+/Ecommerce.Application/obj
+/obj
+/bin
+/.vs
+/Ecommerce.Shared/bin
+/Ecommerce.Shared/obj
+/Ecommerce.UI/bin/Debug/netstandard2.0
+/Ecommerce.UI/obj
+/IdentityServer/bin/Debug/netcoreapp3.0
+/IdentityServer/obj
