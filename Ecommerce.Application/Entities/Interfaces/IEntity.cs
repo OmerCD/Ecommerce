@@ -6,6 +6,6 @@ namespace Ecommerce.Application.Entities.Interfaces
 {
     public interface IEntity<T> : IEntity
     {
-        T Id { get; set; }
+        string Id { get; set; }
     }
 }

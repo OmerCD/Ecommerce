@@ -2,8 +2,8 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.Models;
 using System.Collections.Generic;
+using IdentityServer4.Models;
 
 namespace IdentityServer
 {
@@ -16,12 +16,25 @@ namespace IdentityServer
             };
 
         public static IEnumerable<ApiResource> Apis =>
-            new ApiResource[] 
-            { };
+            new[]
+            {
+                new ApiResource("scriboapi","Scirob API") 
+            };
         
         public static IEnumerable<Client> Clients =>
-            new Client[] 
-            { };
+            new[]
+            {
+                new Client
+                {
+                    ClientId = "ScriboId",
+                    AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+                    ClientSecrets =
+                    {
+                        new Secret("very secret".Sha512())
+                    },
+                    AllowedScopes = {"scriboapi"}
+                } 
+            };
         
     }
 }

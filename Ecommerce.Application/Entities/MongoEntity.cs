@@ -11,7 +11,13 @@ namespace Ecommerce.Application.Entities
     public abstract class MongoEntity : IEntity<ObjectId>
     {
         [BsonId]
-        public ObjectId Id { get; set; }
-        public object IdBase { get => Id; set => Id = (ObjectId)value; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
+
+        public object IdBase
+        {
+            get => Id;
+            set => Id = (string) value;
+        }
     }
 }

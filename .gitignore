@@ -17,3 +17,12 @@
 /Ecommerce.UI/obj
 /IdentityServer/bin
 /IdentityServer/obj
+/.idea/config/applicationhost.config
+/.idea/.idea.Ecommerce/.idea/contentModel.xml
+/.idea/.idea.Ecommerce/.idea/encodings.xml
+/.idea/.idea.Ecommerce/.idea/indexLayout.xml
+/.idea/.idea.Ecommerce/.idea/modules.xml
+/.idea/.idea.Ecommerce/.idea/projectSettingsUpdater.xml
+/.idea/.idea.Ecommerce/riderModule.iml
+/IdentityServer/tempkey.rsa
+/.idea/.idea.Ecommerce/.idea/vcs.xml
